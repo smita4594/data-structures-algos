@@ -2,17 +2,17 @@ package trees;
 
 public class Runner {
 	public static void main(String args[]) {
-		Tree root = new Tree(5);
-		Tree right = new Tree(6);
-		Tree left = new Tree(4);
-		root.left = left;
-		root.right = right;
-		//inorder(root);
-		//preorder(root);
-		postorder(root);
+		Node root = null;
+		/*
+		 * Node right = new Node(6); Node left = new Node(4); root.left = left;
+		 * root.right = right;
+		 */
+		// inorder(root);
+		// preorder(root);
+		// postorder(root);
 	}
 
-	public static void inorder(Tree root) {
+	public static void inorder(Node root) {
 		if (root == null) {
 			return;
 		}
@@ -20,7 +20,8 @@ public class Runner {
 		System.out.println(root.key);
 		inorder(root.right);
 	}
-	public static void preorder(Tree root) {
+
+	public static void preorder(Node root) {
 		if (root == null) {
 			return;
 		}
@@ -28,7 +29,8 @@ public class Runner {
 		inorder(root.left);
 		inorder(root.right);
 	}
-	public static void postorder(Tree root) {
+
+	public static void postorder(Node root) {
 		if (root == null) {
 			return;
 		}
@@ -36,4 +38,6 @@ public class Runner {
 		inorder(root.right);
 		System.out.println(root.key);
 	}
+
+	
 }
