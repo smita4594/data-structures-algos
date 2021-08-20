@@ -2,7 +2,7 @@ package binarySearch;
 
 public class BinarySearchBasic {
 	public static void main(String args[]) {
-		int arr[] = {5};
+		int arr[] = { 5 };
 		System.out.println("ans is:" + binarySearch(arr, 5));
 	}
 

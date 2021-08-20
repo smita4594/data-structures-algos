@@ -6,11 +6,9 @@ public class SlidingWindow {
 		int[] arr = { 1, 2, 3, 4, 5 };
 		int k = 3;
 		System.out.print(slidingWindow(arr, k));
-
 	}
 
 	public static int slidingWindow(int[] arr, int k) {
-
 		int j = 0;
 		int i = 0;
 		int n = arr.length;
@@ -21,7 +19,6 @@ public class SlidingWindow {
 			if ((j - i) + 1 < k) {
 				j++;
 				continue;
-
 			}
 			if ((j - i) + 1 == k) {
 				max = java.lang.Math.max(max, sum);
@@ -29,7 +26,6 @@ public class SlidingWindow {
 				j++;
 				i++;
 			}
-
 		}
 		return max;
 	}
